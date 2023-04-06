@@ -17,23 +17,25 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
+
+const account = process.env.key;
 module.exports = {
   networks: {
     liberty2x: {
       url: "https://liberty20.shardeum.org",
-      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"] //0xecFA21cfFcb7BDeE55D137486Dea0d7984c72619
+      accounts: [account]
     },
     mumbai: {
       url: "https://endpoints.omniatech.io/v1/matic/mumbai/public",
-      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"]
+      accounts: [account]
     },
     kovan: {
       url: "https://eth-kovan.alchemyapi.io/v2/4Dqo63W4vEpd0JqC-gdgxesm8m2zCI2H",
-      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"]
+      accounts: [account]
     },
     binance: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
-      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"]
+      accounts: [account]
     }
   },
   solidity: "0.8.11",
