@@ -19,9 +19,13 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   networks: {
+    liberty2x: {
+      url: "https://liberty20.shardeum.org",
+      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"] //0xecFA21cfFcb7BDeE55D137486Dea0d7984c72619
+    },
     mumbai: {
       url: "https://endpoints.omniatech.io/v1/matic/mumbai/public",
-      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"] //0xecFA21cfFcb7BDeE55D137486Dea0d7984c72619
+      accounts: ["62868e18d46a49f045677f53867de5e11b0dc95a1fa60b47dcc829549008ecd7"]
     },
     kovan: {
       url: "https://eth-kovan.alchemyapi.io/v2/4Dqo63W4vEpd0JqC-gdgxesm8m2zCI2H",
