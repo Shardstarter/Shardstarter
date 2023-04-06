@@ -1,0 +1,25 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.5.1",
+    "@openzeppelin/hardhat-upgrades": "^1.12.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.2",
+    "hardhat": "^2.8.0"
+  },
+  "scripts": {
+    "deployIDOKovan": "npx hardhat run --network kovan scripts/deploy_upgradeable_ido.js",
+    "deployLockKovan": "npx hardhat run --network kovan scripts/deploy_upgradeable_lock.js",
+    "deployIDOBinance": "npx hardhat run --network binance scripts/deploy_upgradeable_ido.js",
+    "deployLockBinance": "npx hardhat run --network binance scripts/deploy_upgradeable_lock.js",
+    "upgradeIDOKovan": "npx hardhat run --network kovan scripts/upgrade_ido.js",
+    "upgradeLockKovan": "npx hardhat run --network kovan scripts/upgrade_lock.js",
+    "upgradeIDOBinance": "npx hardhat run --network binance scripts/upgrade_ido.js",
+    "upgradeLockBinance": "npx hardhat run --network binance scripts/upgrade_lock.js"
+  },
+  "dependencies": {}
+}
